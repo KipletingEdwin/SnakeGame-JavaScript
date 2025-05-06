@@ -27,3 +27,23 @@ window.addEventListener("keydown", changeDirection);
 resetBtn.addEventListener("click",resetGame);
 
 gameStart();
+
+function gameStart(){};
+function nextTick(){};
+function clearBoard(){};
+function createFood(){
+    function randomFood(max,min){
+        const randNum = Math.round((Math.random() * (max-min) + min) / unitSize) * unitSize;
+        return randNum;
+    }
+    foodX = randomFood(0,gameWidth - unitSize);
+    foodY = randomFood(0,gameWidth - unitSize);
+};
+function drawFood(){};
+function moveSnake(){};
+function drawSnake(){};
+function changeDirection(){};
+function checkGameOver(){};
+function displayGameOver(){};
+function resetGame(){};
+
