@@ -76,6 +76,12 @@ function moveSnake(){
     
 };
 function drawSnake(){
+    ctx.fillStyle = snakeColor;
+    ctx.strokeStyle = snakeBorder;
+    snake.forEach(snakePart=>{
+        ctx.fillRect(snakePart.x,snakePart.y,unitSize,unitSize);
+        ctx.strokeRect(snakePart.x,snakePart.y,unitSize,unitSize);
+    })
 
 };
 function changeDirection(){
