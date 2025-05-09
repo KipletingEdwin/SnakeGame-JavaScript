@@ -55,6 +55,8 @@ function nextTick(){
 
 };
 function clearBoard(){
+    ctx.fillStyle = boardBackground;
+    ctx.fillRect(0,0,gameWidth,gameHeight);
 
 };
 function createFood(){
