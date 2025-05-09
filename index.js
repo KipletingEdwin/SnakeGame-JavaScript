@@ -30,6 +30,11 @@ gameStart();
 
 
 function gameStart(){
+    running = true;
+    scoreText.textContent = score;
+    createFood();
+    drawFood();
+
 
 };
 function nextTick(){
