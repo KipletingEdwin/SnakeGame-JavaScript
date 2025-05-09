@@ -34,10 +34,24 @@ function gameStart(){
     scoreText.textContent = score;
     createFood();
     drawFood();
+    nextTick();
 
 
 };
 function nextTick(){
+    if(running){
+        setTimeout(()=>{
+            clearBoard();
+            drawFood();
+            moveSnake();
+            drawSnake();
+            checkGameOver();
+            nextTick();
+        },75)
+    }
+    else{
+        displayGameOver();
+    }
 
 };
 function clearBoard(){
